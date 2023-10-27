@@ -28,7 +28,10 @@ email.at(-1) == "@"
 	: email;
 
 // valid year
-year = new Date().getFullYear() - new Date(year).getFullYear();
+year =
+	year.length == 4
+		? new Date().getFullYear() - new Date(year).getFullYear()
+		: "Введена некоректна дата";
 
 // append data in HTML
 document.body.innerHTML = `
