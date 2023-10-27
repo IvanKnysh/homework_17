@@ -7,6 +7,7 @@ firstName = firstName[0].toUpperCase() + firstName.slice(1).toLowerCase();
 lastName = lastName[0].toUpperCase() + lastName.slice(1).toLowerCase();
 email = email.split(" ").join("").toLowerCase();
 
+// valid first name if is set second name
 if (firstName.split(" ")[1]) {
 	firstName = firstName.split(" ");
 	firstName =
