@@ -8,7 +8,12 @@ lastName = lastName[0].toUpperCase() + lastName.slice(1).toLowerCase();
 email = email.split(" ").join("").toLowerCase();
 
 if (firstName.split(" ")[1]) {
-	console.log("yes");
+	firstName = firstName.split(" ");
+	firstName =
+		firstName[0] +
+		" " +
+		firstName[1][0].toUpperCase() +
+		firstName[1].slice(1).toLowerCase();
 }
 
 // valid email
